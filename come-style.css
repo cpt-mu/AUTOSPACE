@@ -211,9 +211,6 @@ nav img {
   color: #fff;
 }
 
-nav .gg {
-  display: none;
-}
 @media (max-width: 700px) {
   .text-box h1 {
     font-size: 28px;
