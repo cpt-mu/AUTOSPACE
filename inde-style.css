@@ -38,7 +38,7 @@ nav img {
   position: relative;
 }
 .nav-links ul li a {
-  color: #dcb409;
+  color: #d1d401;
   text-decoration: none;
   font-size: 14px;
   font-weight: bolder;
@@ -46,8 +46,8 @@ nav img {
 .nav-links ul li::after {
   content: "";
   width: 0%;
-  height: 2px;
-  background: #be2e21;
+  height: 5px;
+  background: #ff0000;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -85,25 +85,83 @@ nav img {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
+  border-radius: 15px;
   padding: 12px 34px;
-  font-size: 13px;
+  font-family: "fira code";
+  font-size: 18px;
   background: transparent;
   position: relative;
   cursor: pointer;
 }
 .hero-btn:hover {
-  border: 1px solid #f44336;
-  background: #f44336;
+  box-shadow: 0 5px 50px 0 #f41515 inset, 0 5px 50px 0 #f41515,
+    0 5px 50px 0 #f41515 inset, 0 5px 50px 0 #f41515;
+  text-shadow: 0 0 5px #f41515, 0 0 5px #f41515;
+}
+.hero-btn2 {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 100px;
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  padding: 12px 34px;
+  font-family: "fira code";
+  font-size: 10px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn2:hover {
+  color: #fcec0d;
+  border: 3px solid #fcec0d;
+  background: rgb(255, 0, 0);
   transition: 1s;
 }
-
-@media (max-width: 700px) {
+.hero-btn3 {
+  display: inline-block;
+  margin-bottom: 100px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  padding: 12px 34px;
+  font-family: "fira code";
+  font-size: 10px;
+  background: rgb(255, 222, 32);
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn3:hover {
+  color: #fcec0d;
+  border: 3px solid #fcec0d;
+  background: rgb(0, 0, 0);
+  transition: 1s;
+}
+@media (max-width: 999px) {
   .text-box h1 {
-    font-size: 28px;
+    font-size: 62px;
+    margin-top: 35%;
+  }
+  .hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-family: "fira code";
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  nav img {
+    width: 150px;
   }
   .nav-links ul li {
-    display: block;
+    display: flex;
   }
   .nav-links {
     position: absolute;
@@ -115,13 +173,7 @@ nav img {
     z-index: 2;
     transition: 1s;
   }
-  nav .gg {
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
+
   .nav-links ul {
     padding: 30px;
   }
@@ -168,7 +220,14 @@ h3 {
 .features-col:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 700px) {
+@media (max-width: 435px) {
+  .text-box h1 {
+    font-size: 18px;
+    margin-top: 50%;
+  }
+  nav img {
+    width: 100px;
+  }
   .row {
     flex-direction: column;
   }
@@ -224,20 +283,21 @@ h3 {
 
 /*------------- facilities -----------*/
 
-.facilities {
+#facilities {
   width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
 }
 .facilities-col {
-  flex-basis: 31%;
+  flex-basis: 32%;
+  border: 1px solid rgb(204, 203, 203);
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: center;
 }
 .facilities-col:hover {
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1.7);
 }
 .facilities-col img {
   width: 100%;
@@ -256,9 +316,9 @@ h3 {
 
 .cta {
   margin: 100px auto;
-  width: 50%;
+  width: 75%;
   background-image: linear-gradient(rgba(0, 0, 0, 07), rgba(0, 0, 0, 0.3)),
-    url(/images1/banner.jpg);
+    url(images1/banner.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -272,6 +332,7 @@ h3 {
   padding: 0;
 }
 .cta p {
+  color: #fff;
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -282,7 +343,10 @@ h3 {
   color: #be2e21;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 210px) {
+  nav img {
+    width: 50px;
+  }
   .cta p {
     font-size: 24px;
   }
